@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/lib2">
+
+<ImageView
+    android:id="@+id/backButton"
+    android:layout_width="34dp"
+    android:layout_height="34dp"
+    android:layout_margin="16dp"
+    android:contentDescription="Back"
+    android:src="@drawable/arrow_back"
+    />
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView1"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    app:cardCornerRadius="100dp"
+    app:cardElevation="4dp"
+    android:layout_gravity="center_horizontal">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/jing" />
+
+</androidx.cardview.widget.CardView>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Leng Chingmony"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:textSize="20dp"
+    android:textAlignment="center"
+    android:layout_marginTop="10dp"/>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Limkokwing Student"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:textSize="12dp"
+    android:textAlignment="center"
+    android:layout_marginTop="10dp"/>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardView2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    app:cardCornerRadius="50dp"
+    app:cardElevation="20dp"
+    android:background="@drawable/custom_edittext"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/grey"
+        android:padding="24dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:id="@+id/about_me"
+            android:textSize="25sp"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:textColor="@color/purple"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:text="     I am a responsible and energetic person with a range of volunteer and educational program experiences. I am good at conceptual design development and my strengths are to put high effort into everything I do and be able to handle challenging situations."
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Experience"
+            android:id="@+id/loginText"
+            android:textSize="25sp"
+            android:textAlignment="textStart"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/purple"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="casual"
+            android:text="- Our Market2.0” Architectural Competition"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
